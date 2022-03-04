@@ -1,0 +1,20 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto auto auto; */
+    gap: 10px;
+}
+.child:nth-child(1){
+    grid-column: 1 / 3;
+}
+.child:nth-child(5){
+    grid-column: 1 / span 3;
+}
+.child:nth-child(2){
+    grid-row: span 2;
+}
+    
+.child{
+    padding: 1rem;
+    background-color: orange;
+}
